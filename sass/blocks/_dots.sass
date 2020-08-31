@@ -1,0 +1,22 @@
+.dots
+    position: absolute
+    top: -80px
+    right: 60px
+    width: 410px
+    &__row
+        +flex
+        &:nth-child(2)
+            margin-top: 60px
+        &:last-child
+            margin-top: 50px
+    &__item
+        width: 50px
+        height: 50px
+        border-radius: 100%
+        background-color: #cde8dd
+        &_big
+            +center
+            width: 88px
+            height: 88px
+        &_dark
+            background-color: #5c240e

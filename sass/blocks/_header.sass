@@ -1,0 +1,74 @@
+.header
+    position: absolute
+    top: 70px
+    width: 100%
+    &__inner
+        width: 97%
+        +flex
+        margin: 0 auto
+    &__menu
+        width: 35%
+        &-list
+            +flex
+        &-link
+            color: #ffffff
+            text-decoration: none
+            font-size: 16px
+            font-weight: 400
+            line-height: 40px
+            text-transform: uppercase
+            letter-spacing: 0.32px
+    &__icons
+        +flex
+        width: 35%
+        &-left
+            display: flex
+        &-divider
+            width: 47px
+            height: 2px
+            background-color: #ffd68f
+        &-btn
+            background-color: transparent
+            opacity: .7
+            +btn
+            margin-right: 45px
+            i
+                color: #ffffff
+                font-size: 20px
+            &:last-child
+                position: relative
+                margin-right: 0
+                span
+                    position: absolute
+                    top: -12px
+                    right: -12px
+                    display: block
+                    width: 18px
+                    height: 18px
+                    border-radius: 100%
+                    background-color: #ffffff
+                    color: #000000
+                    font-size: 10px
+                    font-weight: 400
+                    text-transform: uppercase
+                    +center
+            &:hover
+                opacity: 1
+        &-social
+            display: flex
+            &-link
+                display: block
+                width: 35px
+                height: 35px
+                border-radius: 100%
+                background-color: #fff
+                margin-right: 10px
+                +center
+                +btn
+                transition: .3s all
+                &:last-child
+                    margin-right: 0
+                &:hover
+                    background-color: #000000
+                    i
+                        color: #ffffff

@@ -1,0 +1,52 @@
+.smoothies
+    min-height: 680px
+    padding: 100px 0
+    &__inner
+        max-width: 1010px
+        margin: 0 auto
+    &__descr
+        max-width: 915px
+        text-align: center
+        color: #1e1e1e
+        font-size: 18px
+        font-weight: 400
+        line-height: 35px
+        margin: 0 auto
+        margin-top: 55px
+    &__items
+        display: flex
+        flex-wrap: wrap
+        width: 100%
+        margin: 0 auto
+        margin-top: 60px
+    &__item
+        +center
+        width: 240px
+        height: 180px
+        border-right: 2px solid #f6edde
+        border-bottom: 2px solid #f6edde
+        &:nth-child(5), &:nth-child(6), &:nth-child(7), &:nth-child(8)
+            border-bottom: 0
+        &:nth-child(4n+4)
+            border-right: 0
+        &-title
+            color: #f2612d
+            font-size: 25px
+            font-weight: 700
+            line-height: 40px
+            letter-spacing: -0.5px
+            margin-top: 30px
+            text-align: center
+        &-img
+            display: block
+            margin: 0 auto
+            &_animated
+                &-plant
+                    animation: plant 3s ease infinite
+                    display: block
+                    margin: 0 auto
+                &-heart
+                    animation: heart 3s ease infinite
+                    display: block
+                    margin: 0 auto
+                        

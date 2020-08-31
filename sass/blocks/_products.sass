@@ -1,0 +1,35 @@
+.products
+    display: flex
+    width: 100%
+    min-height: 715px
+    &__item
+        width: 25%
+        color: #ffffff
+        text-align: center
+        +center
+        &:first-child
+            background-color: $dark-red
+        &:nth-child(2)
+            background-color: $dark-green
+        &:nth-child(3)
+            background-color: $orange
+        &:last-child
+            background-color: $red
+        &-title
+            display: block
+            font-size: 24px
+            font-weight: 700
+            line-height: 22px
+            margin: 30px 0 65px 0
+            span
+                display: block
+                font-style: italic
+                font-weight: 300
+                font-size: 21px
+                line-height: 32px
+    &__img
+        display: block
+        width: 119px
+        max-width: 100%
+        height: auto
+        margin: 0 auto

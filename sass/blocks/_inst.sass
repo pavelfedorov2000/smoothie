@@ -1,0 +1,30 @@
+.inst
+    margin-top: 200px
+    &__acc
+        display: flex
+        justify-content: center
+        align-items: center
+        color: $green
+        font-size: 24px
+        font-weight: 800
+        letter-spacing: -0.48px
+        text-decoration: none
+        i
+            color: $green
+            margin-right: 12px
+    &__photos
+        +flex
+        flex-wrap: wrap
+        margin-top: 45px
+    &__photo
+        position: relative
+        width: 25%
+        height: auto
+        i
+            position: absolute
+            right: 20px
+            bottom: 20px
+            color: #ffffff
+    &__img
+        &:hover
+            opacity: .8
